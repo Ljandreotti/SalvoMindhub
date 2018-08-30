@@ -1,0 +1,19 @@
+header {
+    background-color:beige;
+    color: darkblue;
+    border: 1px solid black;
+    text-align: center;
+}
+
+footer {
+    background-color:beige;
+    color: blue;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.gametitle {
+    background-color: grey;
+    padding: 3px;
+    color: white;
+}

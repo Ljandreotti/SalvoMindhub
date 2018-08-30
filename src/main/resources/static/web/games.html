@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="Batalla Naval con Java">
+    <title>Batalla Naval con Java</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="gamesCSS.css">
+
+</head>
+
+<body>
+    <div id="app" class="container-fluid">
+        <header class="row">
+            <div>
+                <h2>Salvo!</h2>
+            </div>
+        </header>
+        <br>
+
+        <div class="row">
+            <ol>
+                <li v-for="game in games"><span class="gametitle">Game# {{game.id}} - Date created: {{game.created}}</span>
+                    <h4>Players</h4>
+                    <ol>
+                        <li v-for="game in game.gamePlayers">{{game.player.email}}</li>
+                    </ol>
+                    <br>
+                </li>
+            </ol>
+        </div> <!-- Fin row -->
+
+
+        <footer class="row">
+            <div>
+                <h4>&copy; 2018 Salvo | All Rights Reserved</h4>
+            </div>
+        </footer>
+
+    </div> <!-- FIN MAIN CONTAINER -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="gamesJS.js"></script>
+
+</body>
+</html>
